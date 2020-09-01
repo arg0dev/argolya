@@ -1,0 +1,170 @@
+$main: #C9D59B;
+$second: #ACACAC;
+$border: #BFC998;
+$box: #F9FAFC;
+$svg-fill: #C6C6C6;
+$white: #fff;
+$black: #000;
+$h1-b: #C9D49E;
+$standart: 15px;
+$title-desktop: 50px;
+$title-mobile: 30px;
+$hr-mt: -0.1em;
+$pw: 80%;
+
+/* PREDEFINED START */
+.ag-primary {
+    background: $main;
+    width: 150px;
+    border: solid 3px $border;
+    border-radius: 0;
+    color: $white;
+    opacity: 1;
+    transition: ease 1s;
+    &:hover {
+        background: $border;
+        border: solid 3px $main;
+        opacity: 0.8;
+        transition: ease 1s;
+    }
+}
+
+%hover {
+    @extend .ag-primary;
+    background: $border;
+    border: solid 3px $main;
+}
+
+/* PREDEFINED END */
+
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('/assets/fonts/nexa-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/nexa-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: "Nexa";
+    color: $second;
+    font-size: $standart;
+    h1 {
+        font-family: 'Caveat', cursive;
+        color: $second;
+        font-size: $title-desktop;
+    }
+    h2 {
+        font-family: 'Caveat', cursive;
+        color: $second;
+    }
+    h3 {
+        font-family: 'Caveat', cursive;
+        color: $second;
+    }
+    h4 {
+        font-family: 'Caveat', cursive;
+        color: $second;
+    }
+    h5 {
+        font-family: 'Caveat', cursive;
+    }
+    h6 {
+        font-family: 'Caveat', cursive;
+        color: $second;
+    }
+    span {
+        color:  $main;
+    }
+    hr {
+        border-color: $main;
+        width: 50px;
+        position: absolute;
+        margin-top: $hr-mt;
+    }
+    i {
+        font-size: 20px;
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 1px;
+    }
+
+    .w80 {
+        width: $pw;
+    }
+}
+
+
+
+.navbar {
+
+    .navbar-brand {
+        position: relative;
+        left: 50%;
+        margin-left: -50px !important;
+        display: block;
+    }
+    .navbar-toggler {
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+    .bar {
+        height: 2px;
+        background-color: $black;
+        margin: 6px 0;
+        transition: 0.4s;
+        margin-left: auto;
+    }
+    .bar1 {
+        @extend .bar;
+        width: 25px;
+    }
+    .bar2 {
+        @extend .bar;
+        width: 30px;
+    }
+    .bar3 {
+        @extend .bar;
+        width: 20px;
+    }
+
+}
+
+
+header {
+    height: 100vh;
+    min-height: 500px;
+    z-index: 1;
+    background: url('/assets/materials/png/yummy.png');
+    background-position: right 0 bottom 50px;
+    background-repeat: no-repeat;
+    position: relative;
+    .btn {
+        @extend .ag-primary;
+        &:hover {
+            @extend %hover;
+        }
+    }
+
+    .yummy {
+        right: 0;
+        top: 150px;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .promo {
+        background: $main;
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+    .bg-light {
+        background: transparent !important;
+    }

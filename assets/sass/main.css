@@ -1,0 +1,155 @@
+/* PREDEFINED START */
+.ag-primary, header .btn:hover, header .btn {
+  background: #C9D59B;
+  width: 150px;
+  border: solid 3px #BFC998;
+  border-radius: 0;
+  color: #fff;
+  opacity: 1;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+}
+
+.ag-primary:hover, header .btn:hover {
+  background: #BFC998;
+  border: solid 3px #C9D59B;
+  opacity: 0.8;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+}
+
+header .btn:hover {
+  background: #BFC998;
+  border: solid 3px #C9D59B;
+}
+
+/* PREDEFINED END */
+@font-face {
+  font-family: 'Nexa';
+  src: url("/assets/fonts/nexa-regular-webfont.woff2") format("woff2"), url("assets/fonts/nexa-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Nexa";
+  color: #ACACAC;
+  font-size: 15px;
+}
+
+body h1 {
+  font-family: 'Caveat', cursive;
+  color: #ACACAC;
+  font-size: 50px;
+}
+
+body h2 {
+  font-family: 'Caveat', cursive;
+  color: #ACACAC;
+}
+
+body h3 {
+  font-family: 'Caveat', cursive;
+  color: #ACACAC;
+}
+
+body h4 {
+  font-family: 'Caveat', cursive;
+  color: #ACACAC;
+}
+
+body h5 {
+  font-family: 'Caveat', cursive;
+}
+
+body h6 {
+  font-family: 'Caveat', cursive;
+  color: #ACACAC;
+}
+
+body span {
+  color: #C9D59B;
+}
+
+body hr {
+  border-color: #C9D59B;
+  width: 50px;
+  position: absolute;
+  margin-top: -0.1em;
+}
+
+body i {
+  font-size: 20px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 1px;
+}
+
+body .w80 {
+  width: 80%;
+}
+
+.navbar .navbar-brand {
+  position: relative;
+  left: 50%;
+  margin-left: -50px !important;
+  display: block;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.navbar .bar, .navbar .bar1, .navbar .bar2, .navbar .bar3 {
+  height: 2px;
+  background-color: #000;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-left: auto;
+}
+
+.navbar .bar1 {
+  width: 25px;
+}
+
+.navbar .bar2 {
+  width: 30px;
+}
+
+.navbar .bar3 {
+  width: 20px;
+}
+
+header {
+  height: 100vh;
+  min-height: 500px;
+  z-index: 1;
+  background: url("/assets/materials/png/yummy.png");
+  background-position: right 0 bottom 50px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header .yummy {
+  right: 0;
+  top: 150px;
+  position: absolute;
+  z-index: -1;
+}
+
+header .promo {
+  background: #C9D59B;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.bg-light {
+  background: transparent !important;
+}
+/*# sourceMappingURL=main.css.map */
