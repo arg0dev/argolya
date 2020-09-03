@@ -30,6 +30,8 @@
 
 <!-- arg0 CSS -->
 <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400;1,500&display=swap"
+  rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="./assets/sass/main.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -47,20 +49,25 @@
 
 <body>
   <header>
-    <nav class="navbar fixed-top container navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="/assets/materials/svg/ag-logo.svg" width="64px">
-      </a>
-        <button class="navbar-toggler" onclick="visited(this)" type="button">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </button>
-      <div id="mySidenav" class="sidenav">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+
+    <nav class="navbar fixed-top navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/materials/svg/ag-logo.svg" width="64px">
+        </a>
+        <button class="navbar-toggler mb-auto mt-auto" onclick="visited(this)" type="button">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </button>
+        <div id="mySidenav" class="sidenav">
+          <div class="collapser">
+            <a class="ml-auto mr-auto text-center active-n" onclick="closeNav()" href="#">Ana Sayfa</a>
+            <a class="ml-auto mr-auto text-center" href="#">Hakkımızda</a>
+            <a class="ml-auto mr-auto text-center" href="#">Ürünlerimiz</a>
+            <a class="ml-auto mr-auto text-center" href="#">İletişim</a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -69,36 +76,38 @@
     <div class="container-fluid">
       <div class="row ladder align-items-end">
         <div class="container">
-          <div class="row pt-5">
-            <div class="col-md-6 mt-5 pt-5">
+          <div class="row pt-lg-5 pt-xl-5 pt-md-5 pt-1">
+            <div class="col-md-6 mt-lg-4 mt-xl-4 mt-md-4 pt-xl-5 pt-lg-5 pt-md-5 pt-1 mt-1">
               <h1>Lorem ipsum dolor <span>sit amet</span></h1>
-              <hr>
+              <hr class="ml-0 mt-3">
               <p class="mt-4 w80">Duis posuere, neque in faucibus rhoncus, nibh
                 lectus condimentum lorem, scelerisque pharetra
                 leo erat in lacus. Suspendisse vel euismod massa. </p>
               <button class="btn mt-3">Click Here</button>
-              <p id="hide-down" class="mt-5">Scroll Down <i class="fas fa-angle-down"></i></p>
+              <p id="ct-i" class="mt-5">Scroll Down <i class="fas fa-angle-down"></i></p>
             </div>
           </div>
         </div>
 
-        <div class="container-fluid promo">
-          <div class="row">
-            <div class="col-md-3 mb-3 mt-3 text-center">
-              <img src="/assets/materials/svg/natural.svg" width="52">
-              <p class="text-center mt-2">%100 Organik Ürünler</p>
-            </div>
-            <div class="col-md-3 mb-3 mt-3 text-center">
-              <img src="/assets/materials/svg/cheese.svg" width="52">
-              <p class="text-center mt-2">Yöresel Köy Peynir Çeşitleri</p>
-            </div>
-            <div class="col-md-3 mb-3 mt-3 text-center">
-              <img src="/assets/materials/svg/milk.svg" width="52">
-              <p class="text-center mt-2">Doğal ve Ferah Köy Sütü</p>
-            </div>
-            <div class="col-md-3 mb-3 mt-3 text-center">
-              <img src="/assets/materials/svg/natural.svg" width="52">
-              <p class="text-center mt-2">Katkısız Et Ürünleri</p>
+        <div class="promo-bg container-fluid">
+          <div class="container promo">
+            <div class="row">
+              <div class="col-md-3 mb-3 mt-3 text-center">
+                <img src="/assets/materials/svg/natural.svg" width="52">
+                <p class="text-center mt-2">%100 Organik Ürünler</p>
+              </div>
+              <div class="col-md-3 mb-3 mt-3 text-center">
+                <img src="/assets/materials/svg/cheese.svg" width="52">
+                <p class="text-center mt-2">Yöresel Köy Peynir Çeşitleri</p>
+              </div>
+              <div class="col-md-3 mb-3 mt-3 text-center">
+                <img src="/assets/materials/svg/milk.svg" width="52">
+                <p class="text-center mt-2">Doğal ve Ferah Köy Sütü</p>
+              </div>
+              <div class="col-md-3 mb-3 mt-3 text-center">
+                <img src="/assets/materials/svg/natural.svg" width="52">
+                <p class="text-center mt-2">Katkısız Et Ürünleri</p>
+              </div>
             </div>
           </div>
         </div>
@@ -133,18 +142,284 @@
 
   <!-- MOBILE BADGES #END -->
 
-  <div class="text-new">
+  <section class="ag-about container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <h1>Lorem ipsum dolor sit amet!</h1>
+        <div class="col-md-6 text-lg-left text-xl-left text-center">
+          <img class="mt-5 pt-5 mb-xl-5 mb-lg-5 mb-md-5 pb-xl-5 pb-lg-5 pb-md-5 pb-1 mb-1 img-fluid"
+            src="/assets/materials/png/about-us.png" width="300">
+        </div>
+        <div
+          class="col-md-6 text-center text-lg-right text-md-right text-xl-right mt-md-5 pt-md-5 mt-lg-5 mt-xl-5 mt-1 pt-lg-5 pt-xl-5 pt-1 mb-3 pb-3">
+          <h1 class="h1-main">Hakkımızda</h1>
+          <hr class="hr-main mt-3 mr-md-0 mr-lg-0 mr-xl-0">
+          <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Curabitur leo risus, feugiat in quam vel, ullamcorper aliquam
+            metus. Duis in suscipit nibh. Proin elementum mattis vulputate.
+            Phasellus vitae tortor eros. Phasellus mattis mi eget lacus
+            pellentesque pretium. Proin non neque et est elementum
+            dignissim rutrum quis justo. </p>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="ag-products">
+    <div class="container-fluid mixer position-absolute">
+      <div class="row">
+        <div class="col-md-7">
+
+        </div>
+        <div class="col-md-5 text-right prod-right">
+          <img class="img-fluid" src="/assets/materials/png/products-rev.png">
+        </div>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mt-5 pt-5 text-center text-lg-left text-md-left text-xl-left">
+          <h1>Ürünlerimiz</h1>
+          <hr class="ml-xl-0 ml-md-0 ml-lg-0 mt-3">
+          <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Curabitur leo risus, feugiat in quam vel, ullamcorper aliquam
+            metus. Duis in suscipit nibh. Proin elementum mattis vulputate.
+            Phasellus vitae tortor eros.</p>
         </div>
       </div>
     </div>
+  </section>
+
+
+  <section class="switcher">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center text-lg-left text-md-left text-xl-left">
+          <button type="button" id="arg0_swiper--prev" class="btn ag-btn mt-5" alt="Previous"><i
+              class="fas fa-angle-left"></i></button>
+          <button type="button" id="arg0_swiper--next" class="btn ag-btn mt-5" alt="Previous"><i
+              class="fas fa-angle-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ag-prod-slider arg0_swiper mt-1 pt-5 mb-5 pb-5">
+    <div class="item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 ct-box">
+            <img src="/assets/materials/products/flour.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-3 ct-box">
+            <img src="/assets/materials/products/fresh.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-3 ct-box">
+            <img src="/assets/materials/products/egg.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-3 ct-box">
+            <img src="/assets/materials/products/meats.jpg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 ct-box">
+            <img src="/assets/materials/products/olive.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-3 ct-box">
+            <img src="/assets/materials/products/pasta.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-3 ct-box">
+            <img src="/assets/materials/products/yogurt.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-3 ct-box">
+            <img src="/assets/materials/products/cheeses.jpg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOBILE SWIPER #START -->
+  <section class="ag-prod-slider-m arg0_swiper mt-1 pt-5 mb-5 pb-5">
+    <div class="item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 ct-box">
+            <img src="/assets/materials/products/flour.jpg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 ct-box">
+            <img src="/assets/materials/products/fresh.jpg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 ct-box">
+            <img src="/assets/materials/products/egg.jpg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 ct-box">
+            <img src="/assets/materials/products/meats.jpg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 ct-box">
+            <img src="/assets/materials/products/olive.jpg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 ct-box">
+            <img src="/assets/materials/products/pasta.jpg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 ct-box">
+            <img src="/assets/materials/products/yogurt.jpg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 ct-box">
+            <img src="/assets/materials/products/cheeses.jpg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- MOBILE SWIPER #END -->
+
+  <section class="category">
+    <div class="container-fluid mixer position-absolute">
+      <div class="row">
+        <div class="col-md-6 mt-lg-5 mt-xl-5 mt-md-5 pt-xl-5 pt-lg-5 pt-md-5 pt-2 mt-2 text-left">
+          <img class="img-fluid spark" src="/assets/materials/png/prod-l-cat.png">
+        </div>
+        <div class="col-md-6 mt-1 pt-1 text-center text-lg-right text-xl-right text-md-right">
+          <img class="img-fluid" id="spark" src="/assets/materials/png/full.png">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center pt-2 mt-lg-5 mt-xl-5 mt-md-5 pt-xl-5 pt-lg-5 pt-md-5 pb-5 mb-5 mt-2">
+          <h1 class="h1-main">Çeşitlerimiz</h1>
+          <hr class="mt-3">
+          <p class="mt-5">Çölyaklara Özel Ürünler</p>
+          <p>Reçel Çeşitleri</p>
+          <p>Organik Köy Peynir Çeşitleri</p>
+          <p>Organik Zeytin Çeşitleri</p>
+          <p>Katkısız Et ve Süt Ürünleri</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="col-md-6 mt-5 pt-5 pb-1 mb-1">
+    <img class="img-fluid contea mx-auto" width="350" src="/assets/materials/png/contact.png">
   </div>
 
+  <section class="contact">
+    <div class="container">
+      <div class="row">
 
+        <div class="col-md-6 text-center text-lg-left text-xl-left text-md-left">
+          <h1>Detaylı Bilgi Al</h1>
+          <hr class="ml-lg-0 ml-xl-0 ml-md-0 mt-3">
+          <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Curabitur leo risus, feugiat in quam vel, ullamcorper aliquam
+            metus. Duis in suscipit nibh. Proin elementum mattis vulputate.
+            Phasellus vitae tortor eros.</p>
+          <p class="mt-5 pt-3"><i class="fas fa-map-marker mr-2"></i>Bulgurlu Mah. Altın Sok. No.10<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Daire.1 Üsküdar/İSTANBUL</p>
+          <p class="mt-1 pt-2"><i class="fas fa-inbox mr-2"></i>argolya@argolya.com</p>
+          <p class="mt-1 pt-2"><i class="fas fa-phone mr-2"></i>+90 000 000 00 00</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="container mb-5 pb-5 pt-5 mt-5">
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control standart" placeholder="Name & Surname" required>
+            <input type="email" class="form-control standart mt-3" placeholder="Your Email Address" required>
+            <input type="text" pattern="[0-9]+" minlength="11" maxlength="11" class="form-control standart mt-3"
+              placeholder="Your Phone" required>
+            <textarea type="text" rows="10" class="form-control message mt-3" placeholder="Your Message"
+              required></textarea>
+            <div class="invalid-feedback"></div>
+            <button type="submit" class="ag-contact-btn mt-3 mb-5">Submit</button>
+          </div>
+          <div class="col-md-6 map">
+            <iframe width="100%" height="97%" class="mt-3 mt-lg-0 mt-xl-0 mt-md-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.897361447189!2d29.108323215413318!3d40.98372827930328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7c5891cc3bf%3A0x2e8746b0ec51372a!2sReklam%20Odas%C4%B1!5e0!3m2!1str!2str!4v1599140902548!5m2!1str!2str" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6  text-center text-xl-left text-lg-left text-md-left">
+          <img class="text-center text-xl-left text-lg-left text-md-left" src="/assets/materials/svg/ag-logo.svg" width="64">
+        </div>
+        <div class="col-md-6 text-center text-xl-right text-lg-right text-md-right my-auto">
+          <p class="text-center text-xl-right text-lg-right text-md-right mt-4">© 2020 Argolya Yöresel Ürünler</p>
+        </div>
+      </div>
+      <hr class="mt-4">
+      <div class="row">
+      <div class="col-md-6 mr-auto">
+        <p style="font-weight: 300;" class="mt-3 text-center text-xl-left text-lg-left text-md-left">made with <i style="color: #FF4848;" class="fas fa-heart"></i> by <a href="https://arg0.dev/"><span>arg0dev</span></a></p>
+      </div>
+      <div class="col-md-6 ml-auto">
+        <p style="font-weight: 300;" class="mt-3 text-lg-right text-xl-right text-md-right text-center"><i class="fab fa-facebook-f"></i></p>
+      </div>
+    </div>
+    </div>
+  </footer>
 
 </body>
 
