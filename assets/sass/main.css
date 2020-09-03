@@ -240,7 +240,9 @@ main .btn {
 }
 
 .collapser {
-  padding-top: 20em !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sidenav a {
@@ -419,6 +421,14 @@ main .btn {
 footer {
   background: #FCFDFE;
   padding: 2em;
+  border-top: 2px solid #BFC998;
+}
+
+footer .social i {
+  border: 1px solid #ACACAC;
+  padding: 0.5em;
+  font-size: 20px;
+  border-radius: 20em;
 }
 
 footer hr {
