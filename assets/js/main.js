@@ -15,11 +15,11 @@ $(function () {
         if ($(this).width() < 767) {
             $('div.ladder').removeClass('align-items-end').addClass('align-items-center')
             $('div.mixer').removeClass('position-absolute')
-            document.getElementById("spark").src = "/assets/materials/png/half.png";
+            document.getElementById("spark").src = "./assets/materials/png/half.png";
         } else {
             $('div.ladder').removeClass('align-items-center').addClass('align-items-end')
             $('div.mixer').addClass('position-absolute')
-            document.getElementById("spark").src = "/assets/materials/png/full.png";
+            document.getElementById("spark").src = "./assets/materials/png/full.png";
         }
     }).trigger('resize');
 })
@@ -39,13 +39,13 @@ function visited(x) {
 
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "65%";
-    document.getElementById("mySidenav").style.borderLeft = "2px solid #BFC998";
+    document.getElementById("ag-side").style.width = "65%";
+    document.getElementById("ag-side").style.borderLeft = "2px solid #BFC998";
   }
   
   function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("mySidenav").style.borderLeft = "0px solid #BFC998";
+    document.getElementById("ag-side").style.width = "0";
+    document.getElementById("ag-side").style.borderLeft = "0px solid #BFC998";
     sidebar = true
   }
   
@@ -62,3 +62,5 @@ function openNav() {
       $('.arg0_swiper').slick('slickNext');
     });
   });
+
+  

@@ -96,6 +96,10 @@ body p {
   font-weight: 300;
 }
 
+body img {
+  pointer-events: none;
+}
+
 #ct-i i {
   font-size: 20px;
   position: absolute;
@@ -104,8 +108,8 @@ body p {
 }
 
 .navbar {
-  -webkit-transition: ease-in-out 0.5s;
-  transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
 
 .navbar .navbar-toggler {
@@ -192,7 +196,7 @@ body p {
 }
 
 main {
-  background: url("/assets/materials/png/yummy.png") no-repeat right;
+  background: url("../materials/png/yummy.png") no-repeat right;
 }
 
 main .btn {
@@ -209,15 +213,15 @@ main .btn {
   background: #fff !important;
   -webkit-box-shadow: 0px 3px 14px 0px #e0e0e0;
   box-shadow: 0px 3px 14px 0px #e0e0e0;
-  -webkit-transition: ease-in-out 0.5s;
-  transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
 }
 
 .ladder {
   min-height: 100vh;
 }
 
-.sidenav {
+.ag-side {
   height: 100%;
   width: 0;
   position: fixed;
@@ -230,7 +234,7 @@ main .btn {
   transition: 0.5s;
   -webkit-box-shadow: -15px 0px 118px -23px rgba(0, 0, 0, 0.75);
   box-shadow: -15px 0px 118px -23px rgba(0, 0, 0, 0.75);
-  background: url("/assets/materials/png/ag-flow.png") no-repeat bottom left;
+  background: url("../materials/png/ag-flow.png") no-repeat bottom left;
   background-size: contain 1em;
 }
 
@@ -245,7 +249,7 @@ main .btn {
           align-items: center;
 }
 
-.sidenav a {
+.ag-side a {
   padding: 8px 8px 8px;
   text-decoration: none;
   font-size: 25px;
@@ -257,19 +261,19 @@ main .btn {
   font-weight: 100;
 }
 
-.sidenav a:focus {
+.ag-side a:focus {
   color: #C9D59B !important;
 }
 
-.sidenav a:hover {
+.ag-side a:hover {
   color: #C9D59B !important;
 }
 
-.sidenav a:hover {
+.ag-side a:hover {
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
+.ag-side .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
@@ -424,11 +428,14 @@ footer {
   border-top: 2px solid #BFC998;
 }
 
+footer a {
+  text-decoration: none !important;
+  color: #C9D59B;
+}
+
 footer .social i {
-  border: 1px solid #ACACAC;
-  padding: 0.5em;
   font-size: 20px;
-  border-radius: 20em;
+  color: #ACACAC;
 }
 
 footer hr {
