@@ -21,7 +21,7 @@ $mail->Port = 587; //25 , 465 , 587
 $mail->Host = "srvc134.turhost.com";
 
 $mail->Username = "arg0@reklamodasi.com.tr";
-$mail->Password = "&Rc5pnP5";
+$mail->Password = "N0P455W0RD";
 
 
 $mail->setFrom("noreply@reklamodasi.com.tr");
